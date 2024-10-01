@@ -1,3 +1,4 @@
-this is first cimmit
+# new
 
-misstake
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gnbupi)](https://solved.ac/gnbupi/)
+
