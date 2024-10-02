@@ -2,7 +2,6 @@
 using namespace std;
 
 vector<int> A;
-vector<int> vec;
 int N, M;
 void rec(int cnt, int index){
     if(cnt == M){
@@ -14,13 +13,9 @@ void rec(int cnt, int index){
     }
 
     for(int i = index; i < N; i++){
-        if(!vec[i]){
-            vec[i] = 1;
-            A.push_back(i + 1);
-            rec(cnt + 1, i + 1);
+         A.push_back(i + 1);
+            rec(cnt + 1, i);
             A.pop_back();
-            vec[i] = 0;
-        }
     }
 }
 
@@ -29,9 +24,7 @@ int main()
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-
     cin >> N >> M;
-    vec.resize(N, 0);
     rec(0, 0);
 
     return 0;
