@@ -29,7 +29,6 @@ int main()
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-
     cin >> N >> M;
     vec.resize(N, 0);
     rec(0, 0);
